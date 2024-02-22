@@ -1,0 +1,149 @@
+/* Estilos gerais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Verde claro */
+    color: #333;
+}
+
+header {
+    background-color: #2ecc71; /* Verde claro */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.produtos-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+
+.produto {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.produto:hover {
+    transform: translateY(-5px);
+}
+
+.produto img {
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    cursor: pointer; /* Adiciona cursor de mão ao passar por cima da imagem */
+}
+
+.produto h2, .produto p {
+    padding: 20px;
+    margin: 0;
+}
+
+.whatsapp-button {
+    display: inline-block;
+    padding: 15px 12px;
+    background-color: #25d366; /* Verde do WhatsApp */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    background-color: #5ce7d7; /* Cor de destaque ao passar o mouse */
+}
+
+footer {
+    background-color: #2ecc71; /* Verde claro */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Estilos do modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-imagem {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.fechar {
+    color: #fff;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Estilos para dispositivos móveis */
+@media only screen and (max-width: 768px) {
+    .produtos-section {
+        padding: 30px 0;
+    }
+    
+    .produto {
+        width: calc(50% - 20px);
+    }
+}
+
+.whatsapp-button {
+    display: flex; /* Para centralizar verticalmente */
+    justify-content: center; /* Para centralizar horizontalmente */
+    align-items: center; /* Para centralizar verticalmente */
+    padding: 10px 20px; /* Diminuir o padding */
+    background-color: #f7fffa; /* Verde do WhatsApp */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 0px; /* Reduzir o raio da borda */
+    transition: background-color 0.3s ease;
+    font-size: 14px; /* Diminuir o tamanho da fonte */
+}
+
+.whatsapp-button:hover {
+    background-color:  #f5f5f5; /* Cor de destaque ao passar o mouse */
+}
+
+
+.whatsapp-button img {
+    max-width: 50%; /* Garante que a imagem não ultrapasse a largura do botão */
+    max-height: 50%; /* Garante que a imagem não ultrapasse a altura do botão */
+}
